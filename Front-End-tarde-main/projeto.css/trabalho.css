@@ -25,6 +25,10 @@ header {
     align-items: center;
     flex-wrap: wrap;
  }
+ img {
+   height: 220px;
+   width: 220px;
+ }
 
  header h1 {
     font-size: 30px;
