@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Input</title>
+    <style>body{
+        font-family:monospace
+    }</style>
+    <body style="color: rgb(255, 255, 255); background-color: rgb(108, 51, 131);">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Meus tipos de input</legend>
+            <label for="input-text">Text</label>
+            <input id="input-text" type="text" 
+            required minlength="3" maxlength="10" placeholder="Digite seu nome"> 
+            <br>
+            <br>
+            <label for="input-password">Password</label>
+            <input id="input-password" type="password" 
+            required minlength="3" maxlength="10" placeholder="Digite sua senha">
+            <br>
+            <br>
+            <label for="input-email">Email</label>
+            <input id="input-email" type="email"
+            required placeholder="Digite seu email">
+            <br>
+            <br>
+            <label for="input-number">Number</label>
+            <input id="input-number" type="number" min="0" max="150" required maxlength="4">
+            required min="4" max="100" placeholder="Numero">
+            <br>
+            <br>
+            <label for="input-tel">Tel</label>
+            <input id="input-tel" type="tel"
+            required placeholder="(21) 99999-9999">
+            <br>
+            <br>
+            <label for="input-date">Calendario</label>
+            <input id="input-date" type="date">
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>body{
+        font-family:fantasy
+    }</style>
+    <body style="color: rgb(255, 255, 255); background-color: rgb(108, 51, 131);">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>E-commerce</legend>
+            <br>
+            <label for="input-name">Nome:</label>
+            <input type="text" id="input-name" name="name" placeholder="Digite seu nome" required minlength="3"> 
+            <br>
+            <br>
+            <label for="input-number">Idade:</label>
+            <input type="number" id="input-number" name="number" min="18" max="120" placeholder="Digite um número">
+            <br>
+            <br>
+            <label for="input-email">Email:</label>
+            <input type="email" id="input-email" name="email" placeholder="Digite seu email" required>
+            <br>
+            <br>
+            <label for="input-password">Senha:</label>
+            <input type="password" id="input-password" name="password" placeholder="Digite sua senha" required minlength="8">
+            <br>
+            <br>
+            <select>
+                <option value="">Selecione</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Belo Horizonte</option>
+                <option value="SP">São Paulo</option>
+            </select>
+            <br>
+            <br>
+            <fieldset>
+                <legend>radio</legend>
+                <input type="radio" name="rd" id="radio-ms"><label for="radio-ms">Pessoa fisica</label>
+                <input type="radio" name="rd" id="radio-s"><label for="radio-s">Juridica</label>
+            </fieldset>
+        </fieldset>
+        <center>
+            <textarea name="mensagem" id="input-textarea" cols="30" rows="10" placeholder="De seu comentario.."></textarea>
+        </center>
+        <br>
+        <button type="submit">Enviar</button>
+</body>
+</html>

@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive;
+    background-color: black;
+    color: white;
+}
+
+header{
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+footer{
+    margin-top: 20px;
+}
+a{
+    color: yellow;
+    text-decoration: none;
+}
+a{}
+.links{
+    color: yellow;
+    text-decoration: none;
+
+    &:hover{
+        color: aqua;
+    }
+    
+    }
+.produtos{
+    
+
+}
+#titulo{
+    color:brown;
+}

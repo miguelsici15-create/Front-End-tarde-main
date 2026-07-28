@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select, checkbox, radio</title>
+    <style>body{
+        font-family:cursive
+    }</style>
+</head>
+<body style="color: rgb(255, 255, 255); background-color: rgb(147, 86, 6);">
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Select</legend>
+            <select>
+                <option value=""> Selecione</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="Mg">Minas Gerais</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Checkbox</legend>
+            <input type="checkbox" name="check" id="check-valorant">
+            <label for="check-valorant">Valorant</label>
+            <input type="checkbox" name="check" id="check-gta5">
+            <label for="check-gta5">Gta 5</label>
+            <input type="checkbox" name="check" id="check-counterstrike">
+            <label for="check-counterstrike">Counter Strike</label>
+            <input type="checkbox" name="check" id="check-freefire">
+            <label for="check-freefire">Free fire</label>
+        </fieldset>
+        <fieldset>
+            <legend>Radio</legend>
+            <input type="radio" name="rd" id="radio-ms"><label for="radio-ms">Muito-satisfeito</label>
+            <input type="radio" name="rd" id="radio-s"><label for="radio-s">Satisfeito</label>
+            <input type="radio" name="rd" id="radio-ns"><label for="radio-ns">Não-satisfeito</label>
+            <input type="radio" name="rd" id="radio-i"><label for="radio-i">Insatisfeito</label>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
