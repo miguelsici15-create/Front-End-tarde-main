@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .alerta-sucesso{
+            color: brown;
+        }
+    </style>
+
+</head>
+<body id="corpo">
+    <button id="clique-em">Clique em mim</button>
+    <form action="" id="form">
+        <fieldset>
+            <label for="input-text">Nome</label>
+            <input id="nome" type="text" 
+            required minlength="3" maxlength="10" placeholder="Digite seu nome"> 
+            <br>
+            <br>
+            <label for="input-sobrenome">Sobrenome</label>
+            <input id="sobrenome" type="text" 
+            required minlength="3" maxlength="10" placeholder="Digite seu sobrenome">
+            <br>
+            <br>
+            <label for="input-email">Email</label>
+            <input id="email" type="email"
+            required placeholder="Digite seu email">
+            <br>
+            <br>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+<script>
+function salvarFormulario(event) {
+    event.preventDefault();
+    console.log(event)
+    const { target } = event;
+    console.log(target)
+    const nome = target.querySelector("#nome").value;
+    const sobrenome = target.querySelector("#sobrenome").value;
+    const email = target.querySelector("#email").value;
+      
+    console.log(nome, sobrenome, email)
+
+    const usuarioValido = {
+        nome: "Matheus",
+        sobrenome: "comando",
+        email:""
+    }
+    if(usuarioValido.nome === nome && usuarioValido.sobrenome === sobrenome){
+sucesso ("usuario autenticado!");
+    }else{
+        console.erro("usuario não valido");
+    }
+
+    
+    
+
+}
+function sucesso(mensagem){
+    const div = document.createElement(`div`);
+    div.className = "alerta-sucesso";
+    div.textContent = mensagem
+
+    const form = document.querySelector("#form");
+    form.insertBefore(div, form.firstChild);
+
+}
+const formulario = document.querySelector("#form");
+
+formulario.addEventListener("submit", salvarFormulario);
+
+
+        function mostrarnoConsole(event) {
+            console.log(event);
+            console.count("Fui Clicado");
+            const corpo = document.getElementById("corpo");
+            corpo.style.backgroundColor="purple";
+        }
+        const botao = document.querySelector("#clique-em")
+        botao.addEventListener("click", mostrarnoConsole)
+    </script>
+</html>

@@ -12,11 +12,11 @@
 body {
     font-family: initial;
     background-color: rgb(255, 0, 0);
-    color: rgb(239, 233, 233);
+    color: rgb(255, 255, 255);
 }
 
 header {
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     color: black;
     padding: 20px;
 
